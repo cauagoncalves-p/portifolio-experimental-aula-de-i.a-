@@ -1,0 +1,20 @@
+PORTFÓLIO - Cauã Gonçalves Pereira
+
+COMO ABRIR NO VISUAL STUDIO CODE
+1. Extraia esta pasta e abra no VS Code (Arquivo > Abrir Pasta).
+2. (Opcional) Instale a extensão "Live Server" e clique em "Go Live" no canto inferior direito.
+   Sem a extensão, basta abrir o index.html no navegador.
+
+ARQUIVOS PARA COLOCAR (use exatamente estes nomes, ou altere o caminho no index.html)
+imagens/foto-perfil.jpg   -> foto do hero (vertical, 3:4)
+imagens/imagem.jpg        -> imagem de destaque
+imagens/infografico.png   -> infográfico
+video/video.mp4           -> vídeo
+audio/audio.mp3           -> áudio
+animacao/animacao.mp4     -> animação
+musica/musica.mp3         -> música
+
+ONDE EDITAR
+index.html      -> textos (procure os comentários EDITE e INSIRA AQUI) e links das redes (href="#")
+css/style.css   -> cores no bloco TOKENS, no topo (claro e escuro)
+js/script.js    -> comportamentos (tema, menu, animações ao rolar etc.)

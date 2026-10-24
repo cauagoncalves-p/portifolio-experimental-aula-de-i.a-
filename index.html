@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cauã Gonçalves Pereira · Desenvolvedor Back-End</title>
+<meta name="description" content="Portfólio de Cauã Gonçalves Pereira, desenvolvedor back-end em formação.">
+<script>
+  /* Tema salvo ou preferência do sistema (evita "piscar" ao carregar) */
+  (function(){var t=null;try{t=localStorage.getItem('tema')}catch(e){}
+  document.documentElement.dataset.tema=t||(matchMedia('(prefers-color-scheme: dark)').matches?'escuro':'claro');})();
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= CABEÇALHO ================= -->
+<header id="topo">
+  <div class="wrap bar">
+    <a class="logo" href="#inicio" aria-label="Início">Cauã G. Pereira</a>
+    <div class="tools">
+      <nav id="menu" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#video">Vídeo</a>
+        <a href="#audio">Áudio</a>
+        <a href="#imagem">Imagem</a>
+        <a href="#infografico">Infográfico</a>
+        <a href="#animacao">Animação</a>
+        <a href="#musica">Música</a>
+      </nav>
+      <button class="btn-tema" id="tema" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
+      <button class="btn-menu" id="btnMenu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ================= 1. HERO ================= -->
+<section id="inicio">
+  <div class="wrap hero">
+    <div>
+      <h1>Cauã Gonçalves Pereira</h1>
+      <p class="papel">Desenvolvedor Back-End</p>
+      <!-- EDITE: texto de apresentação -->
+      <p class="txt">Jovem aprendiz de TI e estudante de Ciência da Computação, construo APIs, integrações e automações com foco em back-end. Gosto de entender como os sistemas funcionam por dentro, da lógica ao banco de dados, passando pela segurança.</p>
+      <a class="btn" href="#video">Saiba mais</a>
+    </div>
+    <div class="foto" id="foto">
+      <span class="ini" aria-hidden="true">CG</span>
+      <!-- INSIRA AQUI: sua foto de perfil (proporção vertical 3:4 funciona melhor) -->
+      <img src="imagens/foto-perfil.jpg" alt="Foto de perfil de Cauã Gonçalves Pereira" data-fallback>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. INTRODUÇÃO ================= -->
+<section id="sobre" class="alt">
+  <div class="wrap">
+    <h2 class="rev">Sobre mim</h2>
+    <div class="sobre">
+      <div class="rev">
+        <!-- EDITE: textos da introdução -->
+        <p>Sou de São Paulo e atuo como Jovem Aprendiz na equipe de TI da Apsen Farmacêutica, onde aprendo na prática como a tecnologia sustenta o dia a dia de uma empresa.</p>
+        <p>Concluí os cursos técnicos em Informática e em Desenvolvimento de Sistemas no Senac e hoje curso Ciência da Computação na Faculdade Impacta e Segurança da Informação na Uninove. Também fiz o Oracle Next Education, da Alura.</p>
+        <p>Meu interesse vai de desenvolvimento a redes e segurança. Meu objetivo é uma vaga de estágio ou júnior em desenvolvimento back-end, onde eu possa construir sistemas confiáveis e crescer com um time.</p>
+        <p>Fora da tela, acompanho o futebol brasileiro.</p>
+      </div>
+      <div class="rev">
+        <h3>Tecnologias</h3>
+        <!-- EDITE: adicione ou remova itens -->
+        <ul class="chips">
+          <li>C#</li><li>Java</li><li>Python</li><li>React</li><li>React Native</li>
+          <li>Node.js / Express</li><li>MySQL</li><li>SQL Server</li><li>Docker</li><li>n8n</li><li>Xano</li>
+        </ul>
+        <h3>Projetos</h3>
+        <ul class="linha">
+          <li><strong>EduTrack AI</strong><span>Gestão de disciplinas, tarefas e recomendações. React, Express e SQL Server.</span></li>
+          <li><strong>Chatbot de restaurante</strong><span>Bot de pedidos no Telegram com n8n, Xano e pagamento integrado.</span></li>
+          <li><strong>Sabor Local</strong><span>App de delivery em FlutterFlow com back-end em Xano.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. VÍDEO ================= -->
+<section id="video">
+  <div class="wrap">
+    <h2 class="rev">Vídeo</h2>
+    <p class="lead rev">Uma apresentação em vídeo do meu trabalho.</p>
+    <figure class="rev" style="margin:0">
+      <div class="moldura">
+        <video controls preload="metadata" playsinline>
+          <!-- INSIRA AQUI o arquivo de vídeo (opcional: poster="imagens/capa-video.jpg" na tag video) -->
+          <source src="./infos//video.mp4" type="video/mp4">
+          Seu navegador não suporta a tag de vídeo.
+        </video>
+      </div>
+      <figcaption>Legenda do vídeo: edite aqui.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= 4. ÁUDIO ================= -->
+<section id="audio" class="alt">
+  <div class="wrap">
+    <h2 class="rev">Áudio</h2>
+    <p class="lead rev">Ouça um registro em áudio.</p>
+    <div class="cartao-audio rev">
+      <div>
+        <h3>Título do áudio</h3>
+        <p style="color:var(--muted);margin:0">Descrição curta do áudio: edite aqui.</p>
+      </div>
+      <audio controls preload="none">
+        <!-- INSIRA AQUI o arquivo de áudio -->
+        <source src="./infos/ElevenLabs_2026-10-03T12_08_24_Voz de pato_gen_sp100_s50_sb75_v4.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+      </audio>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. IMAGEM ================= -->
+<section id="imagem">
+  <div class="wrap">
+    <h2 class="rev">Imagem</h2>
+    <p class="lead rev">Passe o mouse (ou toque) para ver a legenda.</p>
+    <figure class="zoom rev" tabindex="0" data-arquivo="Coloque sua imagem em imagens/imagem.jpg" style="margin:0">
+      <!-- INSIRA AQUI a imagem de destaque -->
+      <img src="./infos/imagem.png" alt="Descrição da imagem" data-fallback>
+      <figcaption>Legenda da imagem: edite aqui.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= 6. INFOGRÁFICO ================= -->
+<section id="infografico" class="alt">
+  <div class="wrap">
+    <h2 class="rev">Infográfico</h2>
+    <p class="lead rev">Clique na imagem para ampliar.</p>
+    <div class="rev">
+      <div class="info" data-arquivo="Coloque seu infográfico em imagens/infografico.png">
+        <!-- INSIRA AQUI o infográfico (no celular, role para o lado ou use "Ampliar") -->
+        <img src="./infos//tipografia.png" alt="Infográfico" data-fallback id="infoImg">
+      </div>
+      <p class="dica">Deslize para o lado para ver tudo.</p>
+      <button class="btn-sec" type="button" id="ampliar">Ampliar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. ANIMAÇÃO ================= -->
+<section id="animacao">
+  <div class="wrap">
+    <h2 class="rev">Animação</h2>
+    <p class="lead rev">Começa sozinha, sem som, quando aparece na tela.</p>
+    <figure class="rev" style="margin:0">
+      <div class="moldura">
+        <video controls loop muted playsinline preload="metadata" data-autoplay>
+          <!-- INSIRA AQUI o arquivo de animação -->
+          <source src="./infos//animação.mp4" type="video/mp4">
+          Seu navegador não suporta a tag de vídeo.
+        </video>
+      </div>
+      <figcaption>Legenda da animação: edite aqui.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= 8. MÚSICA ================= -->
+<section id="musica">
+  <div class="wrap palco" id="palco">
+    <div class="disco rev" aria-hidden="true"></div>
+    <div class="rev">
+      <h2>Música</h2>
+      <p class="lead" style="margin-bottom:0">Uma produção sonora para fechar a visita.</p>
+      <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <audio controls preload="none" id="player">
+        <!-- INSIRA AQUI o arquivo de música -->
+        <source src="./infos/A_Lógica_do_Triunfo.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+      </audio>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= 9. RODAPÉ ================= -->
+<footer>
+  <div class="wrap">
+    <div class="nome">Cauã Gonçalves Pereira</div>
+    <p class="frase">Código simples, sistemas que funcionam.</p> <!-- EDITE: sua frase -->
+    <ul class="redes">
+      <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="#" target="_blank" rel="noopener">Outra rede</a></li>
+    </ul>
+    <p class="copy">© <span id="ano">2026</span> Cauã Gonçalves Pereira. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<dialog id="zoomDlg">
+  <button class="btn-sec" type="button" id="fechar" style="background:var(--surface)">Fechar</button>
+  <img src="imagens/infografico.png" alt="Infográfico ampliado">
+</dialog>
+
+<script src="js/script.js"></script>
+</body>
+</html>
